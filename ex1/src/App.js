@@ -4,7 +4,11 @@ import React, {useState,useEffect} from 'react';
 import Movie from './components/Movie';
 import MovieForm from './components/MovieForm';
 import Navbar from './components/Navbar';
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
 
 function App() {
 
@@ -34,12 +38,14 @@ function App() {
        ]); 
     };
   return (
-    <div className="App">
-      <Navbar/>
-     <h1>Movie list</h1>
-     <MovieForm addMovie={addMovie}/>
-     {renderMovies}
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar/>
+      <h1>Movie list</h1>
+      <MovieForm addMovie={addMovie}/>
+      {renderMovies}
+      </div>
+    </Router>
   );
 }
 
