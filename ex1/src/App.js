@@ -3,6 +3,7 @@
 import React, {useState,useEffect} from 'react';
 import Movie from './components/Movie';
 import MovieForm from './components/MovieForm';
+import Navbar from './components/Navbar';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
     };
   return (
     <div className="App">
+      <Navbar/>
      <h1>Movie list</h1>
      <MovieForm addMovie={addMovie}/>
      {renderMovies}
