@@ -1,6 +1,7 @@
 .movie{
   display: flex;
-  align-items: center;
+  align-items: left;
+  justify-content: start;
   border : 1px solid gray;
   border-radius:5px;
   padding:5px;
@@ -14,4 +15,10 @@
 .movie .movie-year{
   font-size:0.5rem;
   color:blue;
+}
+
+.movie-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
