@@ -53,7 +53,7 @@ function App() {
         <Route path="/users">
           <Users/>
         </Route>
-        <Route path="/" exact>
+        <Route path="/g" exact>
           <h1>Home</h1>
         </Route>
         {/* </Switch> */}
