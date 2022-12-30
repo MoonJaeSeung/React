@@ -44,6 +44,7 @@ function App() {
     <Router>
       <div className="app">
         <Navbar/>
+          <div className="container">
         {/* <Switch> */}
         <Route path="/movies">
           <h1>Movie list</h1>
@@ -57,6 +58,7 @@ function App() {
           <h1>Home</h1>
         </Route>
         {/* </Switch> */}
+          </div>
       </div>
     </Router>
    

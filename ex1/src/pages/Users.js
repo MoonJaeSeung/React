@@ -19,7 +19,7 @@ const Users = () => {
 
   return (
     <>
-    <div>Users1</div>
+    <div>Users</div>
     <UserList users={users}/>
     </>
   )
