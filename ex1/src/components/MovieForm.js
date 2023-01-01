@@ -67,7 +67,7 @@ const MovieForm = ({addMovie}) =>{
             type="number"
             value={movieYear}
             placeholder="개봉 년도"
-            onChange={e => setMovieTitle(e.target.value)}
+            onChange={e => setMovieYear(e.target.value)}
             errorMessage={yearError}
             />
         {/* <input
